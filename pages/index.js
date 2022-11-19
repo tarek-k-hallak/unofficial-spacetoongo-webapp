@@ -1,10 +1,17 @@
-import { HeaderContainer, FooterContainer } from '../containers'
+import {
+  HeaderContainer,
+  FooterContainer,
+  HeroContainer,
+  ContentContainer
+} from '../containers'
 
 export default function Home() {
   return (
-    <div>
+    <main className='font-primary'>
       <HeaderContainer />
+      <HeroContainer />
+      <ContentContainer />
       <FooterContainer />
-    </div>
+    </main>
   )
 }

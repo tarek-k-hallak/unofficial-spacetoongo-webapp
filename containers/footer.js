@@ -1,4 +1,3 @@
-import moduleName from '../components'
 
 export default function FooterContainer() {
     return (

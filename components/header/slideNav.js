@@ -13,7 +13,7 @@ export default function SlideNav({ children }) {
 SlideNav.Container = forwardRef(function SlideNavContainer({ children }, ref) {
     return (
         <nav className='z-10 h-screen w-screen px-2 fixed top-[40px] right-0 translate-x-full
-            bg-gray bg-opacity-95 transition duration-500 ease-in-out transform overflow-y-auto'
+            bg-background bg-opacity-95 transition duration-500 ease-in-out transform overflow-y-auto'
             ref={ref}>
             {children}
         </nav>
@@ -22,7 +22,7 @@ SlideNav.Container = forwardRef(function SlideNavContainer({ children }, ref) {
 
 SlideNav.LoginButton = function SlideNavLoginButton({ URL, children }) {
     return (
-        <button className={`text-lg w-full h-[35px] mt-8 rounded-lg transition duration-300 bg-primary text-gray`}>
+        <button className={`text-lg w-full h-[35px] mt-8 rounded-lg transition duration-300 bg-primary text-white`}>
             <Link href={URL}>
                 {children}
             </Link>
@@ -40,7 +40,7 @@ SlideNav.List = function SlideNavList({ children }) {
 
 SlideNav.Item = function SlideNavItem({ URL, children }) {
     return (
-        <li className='text-sm text-gray text-right mt-2 mr-2 pb-2 w-[95%] ease-in-out hover:text-hover border-b-[1px] border-gray last-of-type:border-0'>
+        <li className='text-sm text-white text-right mt-2 mr-2 pb-2 w-[95%] ease-in-out hover:text-hover border-b-[1px] border-white last-of-type:border-0'>
             <Link href={URL}>
                 {children}
             </Link>

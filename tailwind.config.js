@@ -24,12 +24,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#8F1F20',
-        accent: '#ed5a2a',
-        gray: '#E3E2DE',
-        hover: '#ffd97a',
+        primary: '#0A1520',
+        accent: '#8F1F20',
+        background: '#000912',
+        hover: '#8F1F20',
       },
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };
