@@ -15,7 +15,7 @@ Card.Image = function CardImage({ item }) {
     )
 }
 
-
+    
 Card.Meta = function CardMeta({ children }) {
     return (
         <div className='hidden'>
