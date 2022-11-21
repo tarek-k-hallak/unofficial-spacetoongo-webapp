@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok } from 'react-i
 
 export default function ContactUs({ children }) {
     return (
-        <div className='mt-8 w-full h-full'>
+        <div className='my-8 w-full h-full'>
             {children}
         </div>
     )
