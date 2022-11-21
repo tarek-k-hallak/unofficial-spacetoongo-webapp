@@ -13,7 +13,7 @@ export default function SlideNav({ children }) {
 SlideNav.Container = forwardRef(function SlideNavContainer({ children }, ref) {
     return (
         <nav className='z-10 h-screen w-screen px-2 fixed top-[40px] right-0 translate-x-full
-            bg-background bg-opacity-95 transition duration-500 ease-in-out transform overflow-y-auto'
+            bg-background transition duration-500 ease-in-out transform '
             ref={ref}>
             {children}
         </nav>

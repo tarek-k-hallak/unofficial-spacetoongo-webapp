@@ -15,7 +15,7 @@ export default function ContentContainer() {
                     id: '1',
                     title: 'ارثر',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/images/sections/hero2.jpg'
+                    imageURL: '/assets/series/children/arthur/small.jpg'
                 },
                 {
                     id: '2',

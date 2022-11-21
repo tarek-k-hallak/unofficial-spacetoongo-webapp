@@ -12,15 +12,25 @@ export default function HeaderContainer() {
     function toggleSlideNav() {
         setIsSlideNavOpened(!isSlideNavOpened)
         if (!isSlideNavOpened) {
-            sliceRef1.current.classList.add("opacity-80", "rotate-45", "translate-y-2")
+            sliceRef1.current.classList.remove("bg-white")
+            sliceRef1.current.classList.add("opacity-80", "rotate-45", "translate-y-2", "bg-accent")
+
             sliceRef2.current.classList.add("opacity-0")
-            sliceRef3.current.classList.add("opacity-80", "-rotate-45", "-translate-y-2")
+
+            sliceRef3.current.classList.add("opacity-80", "-rotate-45", "-translate-y-2", "bg-accent")
+            sliceRef3.current.classList.remove("bg-white")
+
             slideNavRef.current.classList.remove("translate-x-full")
         }
         else {
-            sliceRef1.current.classList.remove("opacity-80", "rotate-45", "translate-y-2")
+            sliceRef1.current.classList.remove("opacity-80", "rotate-45", "translate-y-2" , "bg-accent")
+            sliceRef1.current.classList.add("bg-white")
+
             sliceRef2.current.classList.remove("opacity-0")
-            sliceRef3.current.classList.remove("opacity-80", "-rotate-45", "-translate-y-2")
+
+            sliceRef3.current.classList.remove("opacity-80", "-rotate-45", "-translate-y-2" , "bg-accent")
+            sliceRef3.current.classList.add("bg-white")
+
             slideNavRef.current.classList.add("translate-x-full")
         }
     }

@@ -9,3 +9,8 @@ export { default as Content } from './content'
 export { default as Slider } from './content/slider'
 export { default as Card } from './content/card'
 
+export { default as Footer } from './footer'
+export { default as ContactUs } from './footer/contactUs'
+export { default as Terms } from './footer/terms'
+
+export { default as Form } from './form'

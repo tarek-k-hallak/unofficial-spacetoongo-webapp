@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Card({ children }) {
     return (
-        <div className='flex-shrink-0 flex-grow-0 aspect-w-16 aspect-h-1 w-[33%] md:w-[19.5%] lg:w-[13.8%] h-[220px] md:h-[120px] rounded-md bg-gray-800'>
+        <div className=' flex-shrink-0 flex-grow-0 aspect-w-16 aspect-h-1 w-[30%] md:w-[19.5%] lg:w-[13.8%] h-[220px] md:h-[120px] rounded-md bg-gray-800'>
             {children}
         </div>
     )
@@ -10,12 +11,14 @@ export default function Card({ children }) {
 
 Card.Image = function CardImage({ item }) {
     return (
-        <img className='rounded-md h-full w-full cursor-pointer'
-            src={"item.imageURL"} alt={item.id} />
+        <Link href={`/shows/${item.id}`}>
+            <img className='rounded-md h-full w-full cursor-pointer'
+                src={item.imageURL} alt={item.id} />
+        </Link>
     )
 }
 
-    
+
 Card.Meta = function CardMeta({ children }) {
     return (
         <div className='hidden'>

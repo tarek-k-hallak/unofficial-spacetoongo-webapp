@@ -30,7 +30,7 @@ Slider.Container = function SliderContainer({ children, toggleArrows }) {
 
 Slider.Content = function SliderContent({ children }) {
     return (
-        <div className="flex flex-row-reverse gap-[0.5%] w-full md:w-[95%] mx-auto">
+        <div className="z-10 flex flex-row-reverse gap-[0.5%] w-full md:w-[95%] mx-auto">
             {children}
         </div>
     )
@@ -38,7 +38,7 @@ Slider.Content = function SliderContent({ children }) {
 
 Slider.RightArrow = forwardRef(function SliderRightArrow({row }, ref) {
     return (
-        <button className='bg-slate-500 z-10 w-[2.5%] flex justify-center items-center bg-opacity-50 rounded-l-md'
+        <button className='z-10 bg-slate-500 w-[2.5%] hidden md:flex justify-center items-center bg-opacity-50 rounded-l-md'
                 ref={ref}>
             <SlArrowRight className='text-white' />
         </button>
@@ -47,7 +47,7 @@ Slider.RightArrow = forwardRef(function SliderRightArrow({row }, ref) {
 
 Slider.LeftArrow = forwardRef(function SliderLeftArrow({ }, ref) {
     return (
-        <button className='bg-slate-500 z-10 w-[2.5%] flex justify-center items-center bg-opacity-20 rounded-r-md'
+        <button className='z-10 bg-slate-500 w-[2.5%] hidden md:flex justify-center items-center bg-opacity-50 rounded-r-md'
                 ref={ref}>
             <SlArrowLeft className='text-white ' />
         </button>
