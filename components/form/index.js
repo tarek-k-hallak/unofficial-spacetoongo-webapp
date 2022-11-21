@@ -64,7 +64,7 @@ Form.Break = function FormBreak({ children }) {
     return (
         <>
             <hr className="border-b-1 w-full mt-16" />
-            <span className="text-white -mt-4 px-4 bg-background md:bg-primary">
+            <span className="text-white -mt-4 px-4 rounded-lg bg-primary">
                 {children}
             </span>
         </>
