@@ -1,7 +1,7 @@
 
 export default function Hero({ children, ...restProps }) {
     return (
-        <section className='-mt-[65px] hero-image'>
+        <section className='-mt-[65px] hero-image bg-background'>
             {children}
         </section>
     )
@@ -9,7 +9,7 @@ export default function Hero({ children, ...restProps }) {
 
 Hero.Container = function HeroContainer({ children, ...restProps }) {
     return (
-        <div className="flex flex-col items-center md:items-end justify-end min-h-[500px] md:min-h-[40vw] ">
+        <div className="flex flex-col items-center md:items-end justify-end min-h-[500px] md:min-h-[40vw]">
             {children}
         </div>
     )
