@@ -3,7 +3,7 @@ import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 
 export default function Slider({ children }) {
     return (
-        <div className="">
+        <div className="mr-2">
             {children}
         </div>
     )
@@ -11,7 +11,7 @@ export default function Slider({ children }) {
 
 Slider.Title = function SliderTitle({ children }) {
     return (
-        <h1 className="text-2xl text-white text-right mb-4 ">
+        <h1 className="text-2xl font-bold text-white text-right mb-4 md:mr-8">
             {children}
         </h1>
     )
@@ -30,7 +30,7 @@ Slider.Container = function SliderContainer({ children, toggleArrows }) {
 
 Slider.Content = function SliderContent({ children }) {
     return (
-        <div className="z-10 flex flex-row-reverse gap-[4px] md:gap-[0.5%] w-full md:w-[95%] mx-auto">
+        <div className="z-10 flex flex-row-reverse gap-[4px] md:gap-[0.27%] w-full md:w-[95%] mx-auto">
             {children}
         </div>
     )

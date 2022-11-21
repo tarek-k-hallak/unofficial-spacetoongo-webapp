@@ -18,11 +18,11 @@ export default function FooterContainer() {
                 <ContactUs>
                     <ContactUs.Container>
                         <ContactUs.Logo URL={'/'} />
-                        <ContactUs.Facebook URL={'Facebook.com'} />
-                        <ContactUs.Instagram URL={'Instagram.com'} />
-                        <ContactUs.Twitter URL={'Twitter.com'} />
-                        <ContactUs.Youtube URL={'Youtube.com'} />
-                        <ContactUs.Tiktok URL={'Tiktok.com'} />
+                        <ContactUs.Facebook URL={'https://www.facebook.com/spacetoongo'} />
+                        <ContactUs.Instagram URL={'https://www.instagram.com/spacetoongo'} />
+                        <ContactUs.Twitter URL={'https://www.twitter.com/spacetoongo'} />
+                        <ContactUs.Youtube URL={'https://www.youtube.com/spacetoongo'} />
+                        <ContactUs.Tiktok URL={'https://www.tiktok.com/spacetoongo'} />
                     </ContactUs.Container>
                 </ContactUs>
             </Footer.Container>

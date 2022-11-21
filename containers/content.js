@@ -9,7 +9,7 @@ export default function ContentContainer() {
     const DUMMY_CONTENT = [
         {
             id: '1',
-            title: 'اطفال',
+            title: 'أطفال',
             items: [
                 {
                     id: '1',
@@ -136,6 +136,34 @@ export default function ContentContainer() {
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
                     imageURL: '/assets/series/children/arthur/small.jpg'
                 },
+                {
+                    id: '5',
+                    title: 'ارثر',
+                    genre:'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
+                {
+                    id: '6',
+                    title: 'ارثر',
+                    genre:'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
+                {
+                    id: '7',
+                    title: 'ارثر',
+                    genre:'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
+                {
+                    id: '8',
+                    title: 'ارثر',
+                    genre:'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
             ],
         },
         {
@@ -165,6 +193,34 @@ export default function ContentContainer() {
                 },
                 {
                     id: '4',
+                    title: 'ارثر',
+                    genre:'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
+                {
+                    id: '5',
+                    title: 'ارثر',
+                    genre:'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
+                {
+                    id: '6',
+                    title: 'ارثر',
+                    genre:'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
+                {
+                    id: '7',
+                    title: 'ارثر',
+                    genre:'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/children/arthur/small.jpg'
+                },
+                {
+                    id: '8',
                     title: 'ارثر',
                     genre:'كوميديا',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',

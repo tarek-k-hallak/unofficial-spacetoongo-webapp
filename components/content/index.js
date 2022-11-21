@@ -1,7 +1,7 @@
 
 export default function Content({ children }) {
     return (
-        <section className="bg-primary">
+        <section className="bg-primary pt-8">
             {children}
         </section>
     )

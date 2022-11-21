@@ -1,7 +1,7 @@
 
 export default function Terms({ children }) {
     return (
-        <div className="w-full h-full mt-10">
+        <div className="w-full h-full mt-10 md:mt-24">
             {children}
         </div>
     )

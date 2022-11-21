@@ -31,9 +31,9 @@ ContactUs.Logo = function ContactUsLogo({ URL }) {
 ContactUs.Facebook = function ContactUsFacebook({ URL }) {
     return (
         <div className='cursor-pointer'>
-            <Link href={URL}>
+            <a href={URL}>
                 <FaFacebook className='fill-white hover:fill-hover text-[8vw] sm:text-[40px]' />
-            </Link>
+            </a>
         </div>
     )
 }
@@ -41,9 +41,9 @@ ContactUs.Facebook = function ContactUsFacebook({ URL }) {
 ContactUs.Instagram = function ContactUsInstagram({ URL }) {
     return (
         <div className='cursor-pointer'>
-            <Link href={URL}>
+            <a href={URL}>
                 <FaInstagram className='fill-white hover:fill-hover text-[8vw] sm:text-[40px]' />
-            </Link>
+            </a>
         </div>
     )
 }
@@ -51,9 +51,9 @@ ContactUs.Instagram = function ContactUsInstagram({ URL }) {
 ContactUs.Twitter = function ContactUsTwitter({ URL }) {
     return (
         <div className='cursor-pointer'>
-            <Link href={URL}>
+            <a href={URL}>
                 <FaTwitter className='fill-white hover:fill-hover text-[8vw] sm:text-[40px]' />
-            </Link>
+            </a>
         </div>
     )
 }
@@ -62,9 +62,9 @@ ContactUs.Twitter = function ContactUsTwitter({ URL }) {
 ContactUs.Youtube = function ContactUsYoutube({ URL }) {
     return (
         <div className='cursor-pointer'>
-            <Link href={URL}>
+            <a href={URL}>
                 <FaYoutube className='fill-white hover:fill-hover text-[8vw] sm:text-[40px]' />
-            </Link>
+            </a>
         </div>
     )
 }
@@ -72,9 +72,9 @@ ContactUs.Youtube = function ContactUsYoutube({ URL }) {
 ContactUs.Tiktok = function ContactUsTiktok({ URL }) {
     return (
         <div className='cursor-pointer'>
-            <Link href={URL}>
+            <a href={URL}>
                 <FaTiktok className='fill-white hover:fill-hover text-[8vw] sm:text-[40px]' />
-            </Link>
+            </a>
         </div>
     )
 }
