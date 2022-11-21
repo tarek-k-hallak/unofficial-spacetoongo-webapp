@@ -22,11 +22,12 @@ SlideNav.Container = forwardRef(function SlideNavContainer({ children }, ref) {
 
 SlideNav.LoginButton = function SlideNavLoginButton({ URL, children }) {
     return (
-        <button className={`text-lg w-full h-[35px] mt-8 rounded-lg transition duration-300 bg-primary text-white`}>
-            <Link href={URL}>
+        <Link href={URL}>
+            <button className={`text-lg w-full h-[35px] mt-8 rounded-lg transition duration-300 bg-primary text-white`}>
                 {children}
-            </Link>
-        </button>
+            </button>
+        </Link>
+
     )
 }
 

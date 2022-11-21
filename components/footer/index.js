@@ -9,7 +9,7 @@ export default function Footer({ children }) {
 
 Footer.Container = function FooterContainer({children}) {
     return (
-        <div className="flex flex-col gap-4 items-center max-w-[1440px] mx-auto">
+        <div className="flex flex-col gap-4 items-center max-w-[1440px] mx-2">
             {children}
         </div>
     )

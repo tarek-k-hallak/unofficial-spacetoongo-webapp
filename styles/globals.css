@@ -16,3 +16,30 @@
         background-size: cover;
         background-repeat: no-repeat;
 }
+
+
+
+/* Hero Slide Animation */
+.slider1{
+    animation: slideAnimation 4s linear infinite;
+}
+.slider2{
+    animation: slideAnimation 6s linear infinite;
+}
+.slider3{
+    animation: slideAnimation 8s linear infinite;
+}
+
+.slider1:hover, .slider2:hover, .slider3:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes slideAnimation {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(-250px*1));
+    }
+}
+/* Hero Slide Animation */

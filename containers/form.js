@@ -66,7 +66,9 @@ export default function FormContainer() {
                         <Form.RegisterText>{LoginData.registerText}</Form.RegisterText>
                     </Form.RegisterLable>
                 </Form.Paper>
-                <Form.Image item={LoginData} />
+                <Form.SliderContaier>
+                    <Form.SliderImages />
+                </Form.SliderContaier>
             </Form.Container>
         </Form>
     )
