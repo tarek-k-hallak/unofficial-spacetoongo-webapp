@@ -23,12 +23,12 @@ export default function HeaderContainer() {
             slideNavRef.current.classList.remove("translate-x-full")
         }
         else {
-            sliceRef1.current.classList.remove("opacity-80", "rotate-45", "translate-y-2" , "bg-accent")
+            sliceRef1.current.classList.remove("opacity-80", "rotate-45", "translate-y-2", "bg-accent")
             sliceRef1.current.classList.add("bg-white")
 
             sliceRef2.current.classList.remove("opacity-0")
 
-            sliceRef3.current.classList.remove("opacity-80", "-rotate-45", "-translate-y-2" , "bg-accent")
+            sliceRef3.current.classList.remove("opacity-80", "-rotate-45", "-translate-y-2", "bg-accent")
             sliceRef3.current.classList.add("bg-white")
 
             slideNavRef.current.classList.add("translate-x-full")
@@ -60,14 +60,31 @@ export default function HeaderContainer() {
                 </NavBar>
                 <SlideNav>
                     <SlideNav.Container ref={slideNavRef}>
-                        <SlideNav.LoginButton URL={'/login'}>تسجيل الدخول</SlideNav.LoginButton>
+                        <SlideNav.TopLable>
+                            <SlideNav.SubscrptionButton URL={'/login'}>اشترك الآن و وفر %25</SlideNav.SubscrptionButton>
+                            <SlideNav.LoginButton URL={'/login'}>تسجيل الدخول</SlideNav.LoginButton>
+                        </SlideNav.TopLable>
                         <SlideNav.List >
-                            <SlideNav.Item URL={'/'}>تحميل التطبيق</SlideNav.Item>
-                            <SlideNav.Item URL={'/'}>الميزات</SlideNav.Item>
-                            <SlideNav.Item URL={'/'}>تحكم كامل للاهل</SlideNav.Item>
-                            <SlideNav.Item URL={'/'}>الباقات</SlideNav.Item>
-                            <SlideNav.Item URL={'/'}>الكواكب</SlideNav.Item>
+                            <SlideNav.Item URL={'/'}>الرئيسية</SlideNav.Item>
+                            <SlideNav.Item URL={'/series'}>المسلسلات</SlideNav.Item>
+                            <SlideNav.Item URL={'/movies'}>الافلام</SlideNav.Item>
+                            <SlideNav.Item URL={'/games'}>الالعاب</SlideNav.Item>
+                            <SlideNav.Item URL={'/suggestion'}>المختارات</SlideNav.Item>
                         </SlideNav.List>
+
+                        <SlideNav.Title>الملف الشخصي</SlideNav.Title>
+                        <SlideNav.List >
+                            <SlideNav.Item URL={'/'}>مكتبتي</SlideNav.Item>
+                            <SlideNav.Item URL={'/'}>المفضلة</SlideNav.Item>
+                            <SlideNav.Item URL={'/'}>مشاهدة لاحقاً</SlideNav.Item>
+                        </SlideNav.List>
+
+                        <SlideNav.Title>إعدادات الحساب</SlideNav.Title>
+                        <SlideNav.List >
+                            <SlideNav.Item URL={'/'}>معلومات حسابي</SlideNav.Item>
+                            <SlideNav.Item URL={'/'}>تسجيل الخروج</SlideNav.Item>
+                        </SlideNav.List>
+
                     </SlideNav.Container>
                 </SlideNav>
             </Header.Container>

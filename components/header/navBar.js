@@ -13,7 +13,7 @@ export default function NavBar({ children }) {
 
 NavBar.Container = function NavBarContainer({ children }) {
     return (
-        <nav className='flex flex-row-reverse justify-between md:justify-start items-center max-h-[40px] md:max-h-[50px] lg:max-h-[65px]'>
+        <nav className='flex flex-row-reverse justify-between md:justify-start items-center max-h-[50px] md:max-h-[60px] lg:max-h-[70px]'>
             {children}
         </nav>
     )
@@ -24,7 +24,7 @@ NavBar.Logo = function NavBarLogo({ URL }) {
     return (
         <div className='z-40 mt-10 md:mt-12 lg:mt-14 ml-0 md:ml-2 lg:ml-4'>
             <Link href={URL} >
-                <img className="w-[60px] md:w-[80px] lg:w-[100px]" src="https://spacetoongo.com/assets/img/logo.svg" alt="STGO"></img>
+                <img className="w-[70px] md:w-[80px] lg:w-[100px]" src="https://spacetoongo.com/assets/img/logo.svg" alt="STGO"></img>
             </Link>
         </div >
     )
