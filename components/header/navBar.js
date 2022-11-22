@@ -51,7 +51,7 @@ NavBar.Item = function NavBarItem({ URL, children }) {
 NavBar.Search = function NavBarSearch() {
     return (
         <div className='md:ml-4 mr-0 md:mr-auto cursor-pointer'>
-            <GoSearch className='fill-white hover:fill-hover' />
+            <GoSearch className='fill-white hover:fill-hover text-xl' />
         </div>
     )
 }
