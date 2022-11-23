@@ -30,7 +30,7 @@ Slider.Container = function SliderContainer({ children, toggleArrows }) {
 
 Slider.Content = function SliderContent({ children }) {
     return (
-        <div className="z-10 flex flex-row-reverse gap-[0.5%] md:gap-[0.27%] w-full md:w-[95%] mx-auto">
+        <div className="z-10 flex flex-row-reverse gap-[0.5%] md:gap-[0.27%] w-full md:w-[95%] mx-auto overflow-x-scroll">
             {children}
         </div>
     )

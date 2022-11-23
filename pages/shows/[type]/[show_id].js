@@ -10,8 +10,8 @@ export default function Show() {
         <div>
             <HeaderContainer />
             <HeroContainer
-                show_Id={show_Id}
-                show_type={show_type}
+                show_Id={"show_Id"}
+                show_type={"show_type"}
                 showInfo={false} />
             <div> here is your show ID: {show_Id}</div>
             <div> here is your show type: {show_type}</div>
