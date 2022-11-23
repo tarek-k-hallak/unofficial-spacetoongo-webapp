@@ -11,7 +11,7 @@ export default function Slider({ children }) {
 
 Slider.Title = function SliderTitle({ children }) {
     return (
-        <h1 className="text-2xl font-bold text-white text-right mb-4 md:mr-8">
+        <h1 className="text-2xl font-bold text-white text-right mb-2 mr-2 md:mr-8">
             {children}
         </h1>
     )
@@ -30,7 +30,7 @@ Slider.Container = function SliderContainer({ children, toggleArrows }) {
 
 Slider.Content = function SliderContent({ children }) {
     return (
-        <div className="z-10 flex flex-row-reverse gap-[4px] md:gap-[0.27%] w-full md:w-[95%] mx-auto">
+        <div className="z-10 flex flex-row-reverse gap-[0.5%] md:gap-[0.27%] w-full md:w-[95%] mx-auto">
             {children}
         </div>
     )

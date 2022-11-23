@@ -8,223 +8,352 @@ export default function ContentContainer() {
 
     const DUMMY_CONTENT = [
         {
-            id: '1',
-            title: 'أطفال',
-            items: [
-                {
-                    id: '1',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '2',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '3',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '4',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '5',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '6',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '7',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '8',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '9',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '10',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '11',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '12',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-                {
-                    id: '13',
-                    title: 'ارثر',
-                    genre:'اطفال',
-                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
-                },
-            ],
-        },
-        {
             id: '2',
-            title: 'سبيس باور',
+            title:'عالم المتحري الذكي',
+            type: 'conan',
             items: [
                 {
                     id: '1',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/1/small.jpg'
                 },
                 {
                     id: '2',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/2/small.jpg'
                 },
                 {
                     id: '3',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/3/small.jpg'
                 },
                 {
                     id: '4',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/4/small.jpg'
                 },
                 {
                     id: '5',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/5/small.jpg'
                 },
                 {
                     id: '6',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/6/small.jpg'
                 },
                 {
                     id: '7',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/7/small.jpg'
                 },
                 {
                     id: '8',
                     title: 'ارثر',
-                    genre:'سبيس باور',
+                    genre: 'سبيس باور',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/conan/8/small.jpg'
                 },
             ],
         },
         {
             id: '3',
-            title: 'كوميديا',
+            title:'كلاسيك',
+            type: 'classic',
             items: [
                 {
                     id: '1',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/1/small.jpg'
                 },
                 {
                     id: '2',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/2/small.jpg'
                 },
                 {
                     id: '3',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/3/small.jpg'
                 },
                 {
                     id: '4',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/4/small.jpg'
                 },
                 {
                     id: '5',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/5/small.jpg'
                 },
                 {
                     id: '6',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/6/small.jpg'
                 },
                 {
                     id: '7',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/7/small.jpg'
                 },
                 {
                     id: '8',
                     title: 'ارثر',
-                    genre:'كوميديا',
+                    genre: 'كلاسيك',
                     subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
-                    imageURL: '/assets/series/children/arthur/small.jpg'
+                    imageURL: '/assets/series/classic/8/small.jpg'
+                },
+            ],
+        },
+        {
+            id: '4',
+            title:'سبيس باور',
+            type: 'space-power',
+            items: [
+                {
+                    id: '1',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/1/small.jpg'
+                },
+                {
+                    id: '2',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/2/small.jpg'
+                },
+                {
+                    id: '3',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/3/small.jpg'
+                },
+                {
+                    id: '4',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/4/small.jpg'
+                },
+                {
+                    id: '5',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/5/small.jpg'
+                },
+                {
+                    id: '6',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/6/small.jpg'
+                },
+                {
+                    id: '7',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/7/small.jpg'
+                },
+                {
+                    id: '8',
+                    title: 'ارثر',
+                    genre: 'سبيس باور',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/space-power/8/small.jpg'
+                },
+            ],
+        },
+        {
+            id: '5',
+            title:'كوميديا',
+            type: 'comedie',
+            items: [
+                {
+                    id: '1',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/1/small.jpg'
+                },
+                {
+                    id: '2',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/2/small.jpg'
+                },
+                {
+                    id: '3',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/3/small.jpg'
+                },
+                {
+                    id: '4',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/4/small.jpg'
+                },
+                {
+                    id: '5',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/5/small.jpg'
+                },
+                {
+                    id: '6',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/6/small.jpg'
+                },
+                {
+                    id: '7',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/7/small.jpg'
+                },
+                {
+                    id: '8',
+                    title: 'ارثر',
+                    genre: 'كوميديا',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/comedie/8/small.jpg'
+                },
+            ],
+        },
+        {
+            id: '1',
+            title:'الجديد',
+            type: 'new',
+            items: [
+                {
+                    id: '1',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/1/small.jpg'
+                },
+                {
+                    id: '2',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/2/small.jpg'
+                },
+                {
+                    id: '3',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/3/small.jpg'
+                },
+                {
+                    id: '4',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/4/small.jpg'
+                },
+                {
+                    id: '5',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/5/small.jpg'
+                },
+                {
+                    id: '6',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/6/small.jpg'
+                },
+                {
+                    id: '7',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/7/small.jpg'
+                },
+                {
+                    id: '8',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/8/small.jpg'
+                },
+                {
+                    id: '9',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/9/small.jpg'
+                },
+                {
+                    id: '10',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/10/small.jpg'
+                },
+                {
+                    id: '11',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/11/small.jpg'
+                },
+                {
+                    id: '12',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/12/small.jpg'
+                },
+                {
+                    id: '13',
+                    title: 'ارثر',
+                    genre: 'الجديد',
+                    subtitle: 'lor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sit obcaecati molestiae laboriosam?em',
+                    imageURL: '/assets/series/new/13/small.jpg'
                 },
             ],
         },
@@ -252,15 +381,15 @@ export default function ContentContainer() {
     return (
         <Content>
             <Content.Container>
-                {DUMMY_CONTENT.map(row => (
-                    <Slider key={row.id}>
-                        <Slider.Title>{row.title}</Slider.Title>
+                {DUMMY_CONTENT.map(slide => (
+                    <Slider key={slide.id}>
+                        <Slider.Title>{slide.title}</Slider.Title>
                         <Slider.Container toggleArrows={toggleArrows}>
                             <Slider.RightArrow ref={rightArrowRef} />
                             <Slider.Content >
-                                {row.items.map(item => (
+                                {slide.items.map(item => (
                                     <Card key={item.id}>
-                                        <Card.Image item={item} />
+                                        <Card.Image URL={item.imageURL} id={item.id} title={item.title} type={slide.type} />
                                         <Card.Meta>
                                             <Card.Title>{item.title}</Card.Title>
                                             <Card.Subtitle>{item.subtitle}</Card.Subtitle>

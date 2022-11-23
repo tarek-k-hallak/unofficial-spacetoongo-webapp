@@ -47,11 +47,11 @@ export default function HeaderContainer() {
                         </NavBar.Hamburger>
                         <NavBar.Logo URL={'/'} />
                         <NavBar.List>
-                            <NavBar.Item URL={'/'}>تحميل التطبيق</NavBar.Item>
-                            <NavBar.Item URL={'/'}>الميزات</NavBar.Item>
-                            <NavBar.Item URL={'/'}>تحكم كامل للاهل</NavBar.Item>
-                            <NavBar.Item URL={'/'}>الباقات</NavBar.Item>
-                            <NavBar.Item URL={'/'}>الكواكب</NavBar.Item>
+                            <NavBar.Item URL={'/'}>الرئيسية</NavBar.Item>
+                            <NavBar.Item URL={'/series'}>المسلسلات</NavBar.Item>
+                            <NavBar.Item URL={'/movies'}>الافلام</NavBar.Item>
+                            <NavBar.Item URL={'/suggestion'}>المختارات</NavBar.Item>
+                            <NavBar.Item URL={'/games'}>الالعاب</NavBar.Item>
                         </NavBar.List>
                         <NavBar.Search />
                         <NavBar.Login URL={'login'}>  الدخول</NavBar.Login>
@@ -68,8 +68,8 @@ export default function HeaderContainer() {
                             <SlideNav.Item URL={'/'}>الرئيسية</SlideNav.Item>
                             <SlideNav.Item URL={'/series'}>المسلسلات</SlideNav.Item>
                             <SlideNav.Item URL={'/movies'}>الافلام</SlideNav.Item>
-                            <SlideNav.Item URL={'/games'}>الالعاب</SlideNav.Item>
                             <SlideNav.Item URL={'/suggestion'}>المختارات</SlideNav.Item>
+                            <SlideNav.Item URL={'/games'}>الالعاب</SlideNav.Item>
                         </SlideNav.List>
 
                         <SlideNav.Title>الملف الشخصي</SlideNav.Title>

@@ -13,7 +13,7 @@ export default function NavBar({ children }) {
 
 NavBar.Container = function NavBarContainer({ children }) {
     return (
-        <nav className='flex flex-row-reverse justify-between md:justify-start items-center max-h-[50px] md:max-h-[60px] lg:max-h-[70px]'>
+        <nav className='flex flex-row-reverse justify-between md:justify-start items-center max-h-[50px] md:max-h-[60px] lg:max-h-[65px]'>
             {children}
         </nav>
     )

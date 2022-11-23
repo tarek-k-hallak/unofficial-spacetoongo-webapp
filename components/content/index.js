@@ -9,7 +9,7 @@ export default function Content({ children }) {
 
 Content.Container = function ContentContainer({ children }) {
     return (
-        <div className="flex flex-col gap-20 overflow-x-hidden">
+        <div className="flex flex-col gap-14 overflow-x-hidden">
             {children}
         </div>
     )

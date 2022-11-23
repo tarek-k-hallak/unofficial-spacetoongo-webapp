@@ -16,6 +16,7 @@ module.exports = {
       },
     },
     screens: {
+      xxs:'0',
       xs: '410px',
       sm: '640px',
       md: '768px',
@@ -29,6 +30,10 @@ module.exports = {
         background: '#000912',
         hover: '#8F1F20',
       },
+      backgroundImage:{
+        top: "",
+        right: '',
+      }
     },
   },
   corePlugins: {

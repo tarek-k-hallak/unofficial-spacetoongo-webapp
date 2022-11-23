@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 
-.hero-image {
-    background: linear-gradient(180deg, rgba(0, 16, 32, 0) 50%,
+* {
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+
+@screen xxs{
+    .hero-shadow {
+        background-image: linear-gradient(180deg, rgba(0, 16, 32, 0) 50%,
             rgba(0, 16, 32, .56) 70%,
             rgba(0, 16, 32, .76) 80%,
-            rgba(0, 16, 32, .9) 90%, rgb(0, 16, 32)),
-        linear-gradient(90deg, rgba(0, 16, 32, 0),
-            rgba(0, 16, 32, 0) 50%,
-            rgba(0, 16, 32, .5) 75%, rgb(0, 16, 32)),
-
-        url('/assets/images/sections/hero2.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+            rgba(0, 16, 32, .9) 90%, rgb(0, 16, 32));
+    }
 }
+
+@screen md{
+    .hero-shadow {
+        background-image: linear-gradient(180deg, rgba(0, 16, 32, 0) 50%,
+                                                rgba(0, 16, 32, .56) 70%,
+                                                rgba(0, 16, 32, .76) 80%,
+                                                rgba(0, 16, 32, .9) 90%, rgb(0, 16, 32)),
+                        linear-gradient(90deg, rgba(0, 16, 32, 0),
+                                            rgba(0, 16, 32, 0) 50%,
+                                            rgba(0, 16, 32, .5) 75%, rgb(0, 16, 32));
+    }
+}
+
+.hero-shadow-bottom {
+    background-image: linear-gradient(180deg, rgba(0, 16, 32, 0) 50%,
+            rgba(0, 16, 32, .56) 70%,
+            rgba(0, 16, 32, .76) 80%,
+            rgba(0, 16, 32, .9) 90%, rgb(0, 16, 32));
+}
+
 
 
 
