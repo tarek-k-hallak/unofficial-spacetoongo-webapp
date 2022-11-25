@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { Content, Slider, Card } from '../components'
+import { useRef, useState } from 'react'
+import { Content, Slider, Card, Scroller, Planet } from '../components'
 
 export default function ContentContainer() {
     const rightArrowRef = useRef([])
@@ -359,13 +359,6 @@ export default function ContentContainer() {
         },
     ]
 
-    // if we are haveing a known count of slides, and we are receving 
-    // the Contents in one object with no filter on it.
-    // we can yes the folloing function
-    // const filterVideos = (videos, genre) =>{
-    //     return videos.filter(video => video.tags.includes(genre))
-    // }
-
     function toggleArrows(id, state) {
         if (state) {
             rightArrowRef.current[id].classList.remove('hidden')
@@ -378,16 +371,32 @@ export default function ContentContainer() {
         setShowArrows(state)
     }
 
-
     return (
         <Content>
             <Content.Container>
+                {/* Section Planets */}
+                <Scroller>
+                    <Scroller.Container>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                        <Planet> <Planet.Image URL={"Action"} alt={"Action"} /></Planet>
+                    </Scroller.Container>
+                </Scroller>
+
+                {/* Section Content */}
                 {DUMMY_CONTENT.map(slide => (
                     <Slider key={slide.id}>
                         <Slider.Title>{slide.title}</Slider.Title>
-                        <Slider.Container handleHover={toggleArrows} id={slide.id} >
+                        <Slider.Container >
                             <Slider.RightArrow ref={elem => rightArrowRef.current[slide.id] = elem} />
-                            <Slider.Content >
+                            <Slider.Content handleHover={toggleArrows} id={slide.id} >
                                 {slide.items.map(item => (
                                     <Card key={item.id}>
                                         <Card.Image URL={item.imageURL} id={item.id} title={item.title} type={slide.type} />
@@ -408,3 +417,11 @@ export default function ContentContainer() {
         </Content>
     )
 }
+
+
+    // if we are haveing a known count of slides, and we are receving
+    // the Contents in one object with no filter on it.
+    // we can yes the folloing function
+    // const filterVideos = (videos, genre) =>{
+    //     return videos.filter(video => video.tags.includes(genre))
+    // }

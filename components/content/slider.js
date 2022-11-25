@@ -3,9 +3,9 @@ import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 
 export default function Slider({ children }) {
     return (
-        <div className="">
+        <section className="mr-2 md:mr-0">
             {children}
-        </div>
+        </section>
     )
 }
 
@@ -17,19 +17,19 @@ Slider.Title = function SliderTitle({ children }) {
     )
 }
 
-Slider.Container = function SliderContainer({ children, handleHover, id }) {
+Slider.Container = function SliderContainer({ children }) {
     return (
-        <div className="relative flex flex-row-reverse"
-            onMouseEnter={() => handleHover(id, true)}
-            onMouseLeave={() => handleHover(id, false)}>
+        <div className="relative flex flex-row-reverse">
             {children}
         </div>
     )
 }
 
-Slider.Content = function SliderContent({ children }) {
+Slider.Content = function SliderContent({ children, handleHover, id }) {
     return (
-        <div className="z-0 flex flex-row-reverse gap-[0.5%] md:gap-[0.4%] w-full mx-auto overflow-x-hidden">
+        <div className="z-0 flex flex-row-reverse gap-[0.5%] md:gap-[0.4%] w-full mx-auto overflow-x-scroll"
+            onMouseEnter={() => handleHover(id, true)}
+            onMouseLeave={() => handleHover(id, false)}>
             {children}
         </div>
     )
