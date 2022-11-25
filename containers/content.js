@@ -1,15 +1,15 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Content, Slider, Card } from '../components'
 
 export default function ContentContainer() {
-    const rightArrowRef = useRef()
-    const leftArrowRef = useRef()
+    const rightArrowRef = useRef([])
+    const leftArrowRef = useRef([])
     const [showArrows, setShowArrows] = useState(false)
 
     const DUMMY_CONTENT = [
         {
             id: '2',
-            title:'عالم المتحري الذكي',
+            title: 'عالم المتحري الذكي',
             type: 'conan',
             items: [
                 {
@@ -72,7 +72,7 @@ export default function ContentContainer() {
         },
         {
             id: '3',
-            title:'كلاسيك',
+            title: 'كلاسيك',
             type: 'classic',
             items: [
                 {
@@ -135,7 +135,7 @@ export default function ContentContainer() {
         },
         {
             id: '4',
-            title:'سبيس باور',
+            title: 'سبيس باور',
             type: 'space-power',
             items: [
                 {
@@ -198,7 +198,7 @@ export default function ContentContainer() {
         },
         {
             id: '5',
-            title:'كوميديا',
+            title: 'كوميديا',
             type: 'comedie',
             items: [
                 {
@@ -261,7 +261,7 @@ export default function ContentContainer() {
         },
         {
             id: '1',
-            title:'الجديد',
+            title: 'الجديد',
             type: 'new',
             items: [
                 {
@@ -366,17 +366,18 @@ export default function ContentContainer() {
     //     return videos.filter(video => video.tags.includes(genre))
     // }
 
-    function toggleArrows() {
-        setShowArrows(!showArrows)
-        if (!showArrows) {
-            rightArrowRef.current.classList.remove("hidden")
-            leftArrowRef.current.classList.remove("hidden")
+    function toggleArrows(id, state) {
+        if (state) {
+            rightArrowRef.current[id].classList.remove('hidden')
+            leftArrowRef.current[id].classList.remove('hidden')
         }
         else {
-            rightArrowRef.current.classList.add("hidden")
-            leftArrowRef.current.classList.add("hidden")
+            rightArrowRef.current[id].classList.add('hidden')
+            leftArrowRef.current[id].classList.add('hidden')
         }
+        setShowArrows(state)
     }
+
 
     return (
         <Content>
@@ -384,8 +385,8 @@ export default function ContentContainer() {
                 {DUMMY_CONTENT.map(slide => (
                     <Slider key={slide.id}>
                         <Slider.Title>{slide.title}</Slider.Title>
-                        <Slider.Container toggleArrows={toggleArrows}>
-                            <Slider.RightArrow ref={rightArrowRef} />
+                        <Slider.Container handleHover={toggleArrows} id={slide.id} >
+                            <Slider.RightArrow ref={elem => rightArrowRef.current[slide.id] = elem} />
                             <Slider.Content >
                                 {slide.items.map(item => (
                                     <Card key={item.id}>
@@ -399,7 +400,7 @@ export default function ContentContainer() {
                                     </Card>
                                 ))}
                             </Slider.Content>
-                            <Slider.LeftArrow ref={leftArrowRef} />
+                            <Slider.LeftArrow ref={elem => leftArrowRef.current[slide.id] = elem} />
                         </Slider.Container>
                     </Slider>
                 ))}

@@ -3,7 +3,7 @@ import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 
 export default function Slider({ children }) {
     return (
-        <div className="mr-2">
+        <div className="">
             {children}
         </div>
     )
@@ -17,40 +17,41 @@ Slider.Title = function SliderTitle({ children }) {
     )
 }
 
-Slider.Container = function SliderContainer({ children, toggleArrows }) {
+Slider.Container = function SliderContainer({ children, handleHover, id }) {
     return (
-        <div className="flex flex-row-reverse"
-            onMouseEnter={() => toggleArrows(true)}
-            onMouseLeave={() => toggleArrows(false)}>
+        <div className="relative flex flex-row-reverse"
+            onMouseEnter={() => handleHover(id, true)}
+            onMouseLeave={() => handleHover(id, false)}>
             {children}
         </div>
     )
 }
-
 
 Slider.Content = function SliderContent({ children }) {
     return (
-        <div className="z-10 flex flex-row-reverse gap-[0.5%] md:gap-[0.27%] w-full md:w-[95%] mx-auto overflow-x-scroll">
+        <div className="z-0 flex flex-row-reverse gap-[0.5%] md:gap-[0.4%] w-full mx-auto overflow-x-hidden">
             {children}
         </div>
     )
 }
 
-Slider.RightArrow = forwardRef(function SliderRightArrow({row }, ref) {
+Slider.RightArrow = forwardRef(function SliderRightArrow({ }, ref) {
     return (
-        <button className='z-10 bg-slate-500 w-[2.5%] hidden md:flex justify-center items-center bg-opacity-50 rounded-l-md'
-                ref={ref}>
-            <SlArrowRight className='text-white' />
-        </button>
+        <div className='hidden absolute right-0 z-10 w-[2%] h-full bg-slate-500 bg-opacity-50 rounded-r-md items-center' ref={ref}>
+            <button className='flex justify-center items-center w-full h-full'>
+                <SlArrowRight className='text-white' />
+            </button>
+        </div>
     )
 })
 
 Slider.LeftArrow = forwardRef(function SliderLeftArrow({ }, ref) {
     return (
-        <button className='z-10 bg-slate-500 w-[2.5%] hidden md:flex justify-center items-center bg-opacity-50 rounded-r-md'
-                ref={ref}>
-            <SlArrowLeft className='text-white ' />
-        </button>
+        <div className='hidden absolute left-0 z-10 w-[2%] h-full bg-slate-500 bg-opacity-50 rounded-r-md items-center' ref={ref}>
+            <button className='flex justify-center items-center w-full h-full'>
+                <SlArrowLeft className='text-white ' />
+            </button>
+        </div>
     )
 })
 

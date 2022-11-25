@@ -3,7 +3,8 @@ import React from 'react'
 
 export default function Card({ children }) {
     return (
-        <div className='flex-shrink-0 flex-grow-0 w-[40%] md:w-[19.7%] lg:w-[14%] h-[230px] md:h-[130px] rounded-md bg-gray-800 border-2 border-background'>
+        <div className='flex-shrink-0 flex-grow-0 rounded-md bg-gray-800 md:first-of-type:mr-[2.4%]
+                        w-[40%] md:w-[15.53%]  h-[230px] md:h-[120px] lg:h-[120px]'>
             {children}
         </div>
     )
