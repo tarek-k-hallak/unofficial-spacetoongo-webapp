@@ -16,4 +16,5 @@ export { default as Footer } from './footer'
 export { default as ContactUs } from './footer/contactUs'
 export { default as Terms } from './footer/terms'
 
-export { default as Form } from './form'
+export { default as Login } from './form/login'
+export { default as Register } from './form/register'

@@ -1,10 +1,10 @@
-import { FooterContainer, HeaderContainer, LoginContainer } from '../containers'
+import { FooterContainer, HeaderContainer, RegisterContainer } from '../containers'
 
 export default function Login() {
     return (
         <div>
             <HeaderContainer />
-            <LoginContainer />
+            <RegisterContainer />
             <FooterContainer />
         </div>
     )

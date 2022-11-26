@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Scroller({ children }) {
     return (
-        <section className='z-10 xl:-mt-16 mx-2 md:mr-4'>
+        <section className='z-10 xl:-mt-16 mx-2 md:mr-8'>
             {children}
         </section>
     )
@@ -10,7 +10,7 @@ export default function Scroller({ children }) {
 
 Scroller.Container = function ScrollerContainer({ children }) {
     return (
-        <div className='flex flex-row-reverse items-center gap-[3vw] md:gap-[1.8vw] overflow-scroll'>
+        <div className='flex flex-row-reverse items-center gap-[3vw] md:gap-[1.8vw] overflow-scroll md:overflow-hidden'>
             {children}
         </div>
     )

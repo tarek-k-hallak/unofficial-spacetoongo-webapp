@@ -17,19 +17,19 @@ Slider.Title = function SliderTitle({ children }) {
     )
 }
 
-Slider.Container = function SliderContainer({ children }) {
+Slider.Container = function SliderContainer({ children, handleHover, id }) {
     return (
-        <div className="relative flex flex-row-reverse">
+        <div className="relative flex flex-row-reverse"
+            onMouseEnter={() => handleHover(id, true)}
+            onMouseLeave={() => handleHover(id, false)}>
             {children}
         </div>
     )
 }
 
-Slider.Content = function SliderContent({ children, handleHover, id }) {
+Slider.Content = function SliderContent({ children }) {
     return (
-        <div className="z-0 flex flex-row-reverse gap-[0.5%] md:gap-[0.4%] w-full mx-auto overflow-x-scroll"
-            onMouseEnter={() => handleHover(id, true)}
-            onMouseLeave={() => handleHover(id, false)}>
+        <div className="z-0 flex flex-row-reverse gap-[0.5%] md:gap-[0.4%] w-full mx-auto overflow-x-scroll md:overflow-hidden">
             {children}
         </div>
     )

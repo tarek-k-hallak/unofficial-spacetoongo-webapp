@@ -40,7 +40,7 @@ export default function HeaderContainer() {
             <Header.Container>
                 <NavBar>
                     <NavBar.Container>
-                        <NavBar.Hamburger toggleSlideNav={toggleSlideNav} >
+                        <NavBar.Hamburger onClick={toggleSlideNav} >
                             <NavBar.HamburgerSlice ref={sliceRef1} />
                             <NavBar.HamburgerSlice ref={sliceRef2} />
                             <NavBar.HamburgerSlice ref={sliceRef3} />

@@ -394,9 +394,9 @@ export default function ContentContainer() {
                 {DUMMY_CONTENT.map(slide => (
                     <Slider key={slide.id}>
                         <Slider.Title>{slide.title}</Slider.Title>
-                        <Slider.Container >
+                        <Slider.Container handleHover={toggleArrows} id={slide.id} >
                             <Slider.RightArrow ref={elem => rightArrowRef.current[slide.id] = elem} />
-                            <Slider.Content handleHover={toggleArrows} id={slide.id} >
+                            <Slider.Content >
                                 {slide.items.map(item => (
                                     <Card key={item.id}>
                                         <Card.Image URL={item.imageURL} id={item.id} title={item.title} type={slide.type} />

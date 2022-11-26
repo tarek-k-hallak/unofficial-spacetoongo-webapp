@@ -77,10 +77,10 @@ NavBar.SubscrptionButton = function NavBarSubscrptionButton({ URL, children }) {
     )
 }
 
-NavBar.Hamburger = function NavBarHamburger({ children, toggleSlideNav }) {
+NavBar.Hamburger = function NavBarHamburger({ children, onClick }) {
     return (
         <button className='md:hidden w-6 h-5 flex flex-col justify-between cursor-pointer'
-            onClick={() => toggleSlideNav()}>
+            onClick={() => onClick()}>
             {children}
         </button>
     )

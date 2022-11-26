@@ -3,10 +3,9 @@ export const LoginData = {
     emailInputHolder: 'البريد الالكتروني',
     passwordInputHolder: 'كلمة السر',
     submit: 'دخول',
-    submitLoading: "...جار التسجيل",
+    submitLoading: "...جار الدخول",
     break:"او عن طريق",
     registerText: ' ليس لديك حساب؟',
     registerButton: 'انشاء حساب جديد',
     picture: "../assets/images/sections/signin.jpg",
-
 };
