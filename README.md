@@ -5,8 +5,8 @@ https://spacetoongo.netlify.app
 
 Tags:
 
-React.js
-React compound component
-React icons
-Next.js
-TailwindCSS
+- Next.js
+- React.js
+- React compound component
+- React icons
+- TailwindCSS
